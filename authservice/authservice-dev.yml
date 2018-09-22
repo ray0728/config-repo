@@ -1,0 +1,12 @@
+server.port: 10010
+spring.datasource.driverClassName: "com.mysql.jdbc.Driver"
+spring.datasource.url: "jdbc:mysql://localhost:3306/cloud_account?useUnicode=true&characterEncoding=utf-8&useSSL=false"
+spring.datasource.username: "{cipher}33b487778ccbf276d9428b36d6328515ec2af9e42e8c4c3cbf93c712e3acd8cbd310da1c70bef41e829bf1b508852f58"
+spring.datasource.password: "{cipher}dd0e9b868ab50d3a4d8319b816834da448d92fe5c11d051a635fb22d8ee59be6"
+spring.redis.host: "localhost"
+spring.redis.port: 6379
+spring.redis.password: "{cipher}4eea9dd2fb8e9f830e48a7dfe058b369c758d6d615046e3c83f0f96ace3a983852ed884782fe1604037d7ad30b7ae758"
+token.upload.access.validity: 6400
+token.upload.refresh.validity: 604800
+token.browse.access.validity: 259200
+token.browse.refresh.validity: 604800
