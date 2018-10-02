@@ -3,7 +3,7 @@ client:
         grant: "authorization_code;refresh_token"
         id: "{cipher}24446973440cf40c5fd4c7bc31c5148facd03fe34681d2337abfe3d1a8083e4e"
         scopes: "account_info;"
-        secret: "cipher}426cba3f6d6b4fe2ea89075ba7cab4227c82bfc664aec0f9461f945366f436ad097e4b954e79edcbfa7310e8f4730e4f"
+        secret: "{cipher}426cba3f6d6b4fe2ea89075ba7cab4227c82bfc664aec0f9461f945366f436ad097e4b954e79edcbfa7310e8f4730e4f"
 eureka-server: "localhost:10001"
 eureka:
     client:
