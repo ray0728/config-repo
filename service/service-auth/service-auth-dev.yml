@@ -1,0 +1,37 @@
+client:
+    config:
+        grant: "authorization_code;refresh_token"
+        id: "{cipher}24446973440cf40c5fd4c7bc31c5148facd03fe34681d2337abfe3d1a8083e4e"
+        scopes: "account_info;"
+        secret: "cipher}426cba3f6d6b4fe2ea89075ba7cab4227c82bfc664aec0f9461f945366f436ad097e4b954e79edcbfa7310e8f4730e4f"
+eureka-server: "localhost:10001"
+eureka:
+    client:
+        fetch-registry: true
+        register-with-eureka: true
+        service-url:
+            defaultZone: "http://${eureka-server}/eureka/"
+    instance:
+        prefer-ip-address: true
+server:
+    port: 10004
+spring:
+    redis:
+        host: "localhost"
+        password: "{cipher}4eea9dd2fb8e9f830e48a7dfe058b369c758d6d615046e3c83f0f96ace3a983852ed884782fe1604037d7ad30b7ae758"
+        port: 6379
+token:
+    browse:
+        access:
+            validity: 259200
+        refresh:
+            validity: 604800
+    upload:
+        access:
+            validity: 6400
+        refresh:
+            validity: 604800
+tokenkey:
+    jks:
+        private:
+            key: "{cipher}e3495e381d677a5bc9a68577b25a0cf6e389430861f4c836e7c832104e7bf0ba"
