@@ -1,0 +1,51 @@
+eureka-server: "localhost:10001"
+auth-server: "http://localhost:10004"
+server:
+    port: 10005
+spring:
+    datasource:
+        driver-class-name: "com.mysql.jdbc.Driver"
+        password: "{cipher}6e220f085a95caefc12dd370b1ff0843cb18b0a66075674bdc9b7633736be646"
+        url: "jdbc:mysql://localhost:3306/cloud_store?useUnicode=true&characterEncoding=utf-8&useSSL=false"
+        username: "{cipher}41b7dd15080568826ab1e40584d8fea05499d98c3dc016f5770721c0496a76e41fe6a864c59b6857251dd8ff5d8ac98f"
+    redis:
+        host: "localhost"
+        lettuce:
+            pool:
+                max-active: 8
+                max-idle: 8
+                max-wait: "-1ms"
+                min-idle: 0
+        password: "{cipher}54b126f20c2604539fd0308f391292db7befafbb033042642e21b2c0c9abc0466a717c9351c1933d5b31fd52a30e29c7"
+        port: 6379
+    servlet:
+        multipart:
+            max-file-size: "10MB"
+            max-request-size: "10MB"
+eureka:
+    client:
+        fetch-registry: true
+        register-with-eureka: true
+        service-url:
+            defaultZone: "http://${eureka-server}/eureka/"
+    instance:
+        prefer-ip-address: true
+rource:
+    upload:
+        dir:
+            root: "{cipher}88797b9ffe59504a47099a1b9416c6d6c8f4c6ef6b933ed7742582c703af485e609f3c5dbfe1e99b52db868e1543c0ae"
+security:
+    oauth2:
+        client:
+            access-token-uri: "${auth-server}/oauth/token"
+            client-id: '{cipher}e123ddeee5241661da6be11fb65ab44e4368ecfc1942c0038a4f25db65bd11d3'
+            client-secret: '{cipher}2daeca87f64bdac39d7328c209800576afc9b851b355dfe7cf4a1bc95f8052c88619a92ca44c42f3c3cd6c5607751ff1'
+            scope: "account_info"
+            user-authorization-uri: "${auth-server}/oauth/authorize"
+        jwt:
+            publickey:
+                local: "public.txt"
+                remote: "${auth-server}/oauth/token_key"
+        resource:
+            token-info-uri: "${auth-server}/oauth/check_token"
+
