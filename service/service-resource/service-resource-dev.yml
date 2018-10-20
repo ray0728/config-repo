@@ -2,6 +2,7 @@ eureka-server: "localhost:10001"
 auth-server: "http://localhost:10004"
 label.upload.files: "file"
 server:
+    address: "127.0.0.1"
     port: 10005
 spring:
     datasource:
