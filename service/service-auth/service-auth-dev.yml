@@ -1,9 +1,9 @@
 client:
     config:
         grant: "authorization_code;refresh_token"
-        id: "{cipher}24446973440cf40c5fd4c7bc31c5148facd03fe34681d2337abfe3d1a8083e4e"
+        id: "{cipher}ced6fca023db53322bf69ba7b070f3e697f78c360fd6b1b4764cb4df3d19a71b"
         scopes: "account_info;"
-        secret: "{cipher}426cba3f6d6b4fe2ea89075ba7cab4227c82bfc664aec0f9461f945366f436ad097e4b954e79edcbfa7310e8f4730e4f"
+        secret: "{cipher}9ffc306f5b8e9665bc3dd0f82acb7e2f2c5f7eb12c567c6cf335b263ca4a41595f07de47fa7f098946c2976faff4502f"
 eureka-server: "localhost:10001"
 eureka:
     client:
@@ -21,7 +21,7 @@ server:
 spring:
     redis:
         host: "localhost"
-        password: "{cipher}4eea9dd2fb8e9f830e48a7dfe058b369c758d6d615046e3c83f0f96ace3a983852ed884782fe1604037d7ad30b7ae758"
+        password: "{cipher}e864877a785f81037cc1eb7e65c9a920dfe0a6a45989795dd59a6330386420d45e16034436a7dee7bd01d1f155af2755"
         port: 6379
 token:
     browse:
@@ -37,4 +37,4 @@ token:
 tokenkey:
     jks:
         private:
-            key: "{cipher}e3495e381d677a5bc9a68577b25a0cf6e389430861f4c836e7c832104e7bf0ba"
+            key: "{cipher}5dfc8ed6a27fc6d9d7ac9176afe853e6e9de9cd342262cb39603ee703ee8e4ff"
