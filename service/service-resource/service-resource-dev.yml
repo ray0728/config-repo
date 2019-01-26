@@ -7,9 +7,9 @@ server:
 spring:
     datasource:
         driver-class-name: "com.mysql.jdbc.Driver"
-        password: "{cipher}6e220f085a95caefc12dd370b1ff0843cb18b0a66075674bdc9b7633736be646"
-        url: "jdbc:mysql://localhost:3306/cloud_store?useUnicode=true&characterEncoding=utf-8&useSSL=false"
-        username: "{cipher}41b7dd15080568826ab1e40584d8fea05499d98c3dc016f5770721c0496a76e41fe6a864c59b6857251dd8ff5d8ac98f"
+        password: "{cipher}0ae5c357ca30192c277be0264c96a1aa4faf09bcc8c22ce55bad08b2953076a8"
+        url: "jdbc:mysql://localhost:3306/resource?useUnicode=true&characterEncoding=utf-8&useSSL=false"
+        username: "{cipher}9e4e4ece3a480b605678c405d04424c59bbc23e35314655b63bab43cdb4ab869"
     redis:
         host: "localhost"
         lettuce:
@@ -18,7 +18,7 @@ spring:
                 max-idle: 8
                 max-wait: "-1ms"
                 min-idle: 0
-        password: "{cipher}54b126f20c2604539fd0308f391292db7befafbb033042642e21b2c0c9abc0466a717c9351c1933d5b31fd52a30e29c7"
+        password: "{cipher}d9a832f195793c20f06a2a89f27be3371c044ea201d734ebade6a7d90f544b2ec0e30e1cb2df18b071b088a6c2f592a5"
         port: 6379
     servlet:
         multipart:
@@ -36,13 +36,13 @@ eureka:
 rource:
     upload:
         dir:
-            root: "{cipher}88797b9ffe59504a47099a1b9416c6d6c8f4c6ef6b933ed7742582c703af485e609f3c5dbfe1e99b52db868e1543c0ae"
+            root: "{cipher}be7d0a032bda5d0837c99113b79bdfc49fa8e01164d7e176df190a4bed67afc8bfdd2af46707f8b35d6d0fdc30b1966960b88f76fcdaf0751f511ade82c17297"
 security:
     oauth2:
         client:
             access-token-uri: "${auth-server}/oauth/token"
-            client-id: '{cipher}e123ddeee5241661da6be11fb65ab44e4368ecfc1942c0038a4f25db65bd11d3'
-            client-secret: '{cipher}2daeca87f64bdac39d7328c209800576afc9b851b355dfe7cf4a1bc95f8052c88619a92ca44c42f3c3cd6c5607751ff1'
+            client-id: '{cipher}a760e23ee96fadcdb72e95f2f2edd1c2b86f51af2244d9679258ea77c5454667'
+            client-secret: '{cipher}a1a933175d017dcf64df245ca86de11ed2ec1b34153044b08d2ea508c7c0264eafa73526184dee20218d6a3195729d23'
             scope: "account_info"
             user-authorization-uri: "${auth-server}/oauth/authorize"
         jwt:
