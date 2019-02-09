@@ -51,4 +51,8 @@ security:
                 remote: "${auth-server}/oauth/token_key"
         resource:
             token-info-uri: "${auth-server}/oauth/check_token"
-
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

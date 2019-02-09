@@ -1,3 +1,6 @@
+logging:
+  level:
+    com.rcircle.service.auth.*: "DEBUG"
 client:
     config:
         grant: "authorization_code;refresh_token"
