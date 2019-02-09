@@ -41,3 +41,9 @@ tokenkey:
     jks:
         private:
             key: "{cipher}5dfc8ed6a27fc6d9d7ac9176afe853e6e9de9cd342262cb39603ee703ee8e4ff"
+
+management:
+   endpoints:
+     web:
+       exposure:
+         include: "*"
