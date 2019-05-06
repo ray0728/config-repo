@@ -1,8 +1,8 @@
 server:
   address: "127.0.0.1"
   port: 10001
-management:
-   endpoints:
-     web:
-       exposure:
-         include: "*"
+# management:
+   # endpoints:
+     # web:
+       # exposure:
+         # include: "*"
