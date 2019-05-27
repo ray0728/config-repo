@@ -16,6 +16,7 @@ eureka:
             defaultZone: "http://${eureka-server}/eureka/"
     instance:
         prefer-ip-address: true
+        ip-address: "127.0.0.1"
 server:
     port: 10004
     servlet:
