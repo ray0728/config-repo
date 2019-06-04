@@ -36,8 +36,9 @@ eureka:
 rource:
     upload:
         dir:
-            # root: "{cipher}be7d0a032bda5d0837c99113b79bdfc49fa8e01164d7e176df190a4bed67afc8bfdd2af46707f8b35d6d0fdc30b1966960b88f76fcdaf0751f511ade82c17297"
-            root: "{cipher}7b1fc70a848db07504cbd3a41833e541a61b6cca067906b566e88ebaa066e990"
+            root:
+                linux: "{cipher}be7d0a032bda5d0837c99113b79bdfc49fa8e01164d7e176df190a4bed67afc8bfdd2af46707f8b35d6d0fdc30b1966960b88f76fcdaf0751f511ade82c17297"
+                windows: "{cipher}7b1fc70a848db07504cbd3a41833e541a61b6cca067906b566e88ebaa066e990"
 security:
     oauth2:
         client:
