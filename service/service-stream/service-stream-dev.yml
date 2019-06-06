@@ -19,7 +19,7 @@ management:
   endpoints:
     web:
       exposure:
-        include: *
+        include: "*"
 eureka:
   instance:
     ip-address: "127.0.0.1"
@@ -34,5 +34,5 @@ ffmpeg:
   path:
     linux: "/usr/bin/"
     windows: "E:\\Program Files\\ffmpeg-4.1.3-win64-static\\bin\\"
-eureka-server: localhost:10001
+eureka-server: "localhost:10001"
 
