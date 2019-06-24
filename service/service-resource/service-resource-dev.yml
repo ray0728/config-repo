@@ -23,8 +23,6 @@ eureka:
     client:
         fetch-registry: true
         register-with-eureka: true
-        service-url:
-            defaultZone: "http://${eureka-server}/eureka/"
     instance:
         prefer-ip-address: true
 rource:
