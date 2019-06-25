@@ -10,11 +10,6 @@ spring:
                 sms:
                     destinationi: "sms"
                     content-type: "application/json"
-    kafka:
-        producer:
-            acks: 1
-            retries: 5
-            batch-size: 16384
 eureka:
     client:
         fetch-registry: true
