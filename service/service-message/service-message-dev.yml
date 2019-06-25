@@ -1,7 +1,4 @@
-eureka-server: "localhost:10001"
-auth-server: "http://localhost:10004"
 server:
-    address: "127.0.0.1"
     port: 10007
 spring:
     cloud:
@@ -17,10 +14,7 @@ eureka:
     client:
         fetch-registry: true
         register-with-eureka: true
-        service-url:
-            defaultZone: "http://${eureka-server}/eureka/"
     instance:
-        ip-address: "127.0.0.1"
         prefer-ip-address: true
 security:
     oauth2:
