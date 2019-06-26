@@ -5,7 +5,7 @@ spring:
         stream:
             kafka:
                 binder:
-                auto-add-partitions: true
+                    auto-add-partitions: true
             bindings:
                 news:
                     destinationi: "news"
