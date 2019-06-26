@@ -4,15 +4,12 @@ server:
     session:
       cookie:
         name: "UISESSION"
-eureka-server: "localhost:10001"
 eureka:
   instance:
     prefer-ip-address: true
   client:
     register-with-eureka: true
     fetch-registry: true
-    service-url:
-      defaultZone: "http://${eureka-server}/eureka/"
 security:
   oauth2:
     client:
