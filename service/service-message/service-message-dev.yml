@@ -3,6 +3,9 @@ server:
 spring:
     cloud:
         stream:
+            kafka:
+                binder:
+                auto-add-partitions: true
             bindings:
                 news:
                     destinationi: "news"
