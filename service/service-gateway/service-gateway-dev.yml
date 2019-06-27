@@ -58,6 +58,4 @@ management:
      web:
        exposure:
          include: "*"
-zuul:
-  sensitive-headers: "Cookie,Set-Cookie"
 
