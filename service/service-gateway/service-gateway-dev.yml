@@ -4,6 +4,44 @@ server:
     session:
       cookie:
         name: "UISESSION"
+spring:
+  servlet:
+    multipart:
+      max-file-size: "10MB"
+      max-request-size: "10MB"
+  cloud:
+    stream:
+      bindings:
+        hls:
+          destination: "hls"
+          content-type: "application/json"
+          group: "hlsgroup"
+        news:
+          destination: "news"
+          content-type: "application/json"
+          group: "newsgroup"
+        sms:
+          destination: "sms"
+          content-type: "application/json"
+          group: "smsgroup"
+  sleuth:
+    sampler:
+      probability: 1
+ribbon:
+  ConnectTimeout: 15000
+  readTimeout: 30000
+zuul:
+  ribbon:
+    eager-load:
+      enabled: true
+      clients: "service-resource, service-auth, service-account"
+  ignored-services: "*"
+  service-resource:
+    sensitive-headers:
+  routes:
+    service-resource:
+      path: "/blog/api/**"
+      strip-prefix: true
 eureka:
   instance:
     prefer-ip-address: true
