@@ -42,6 +42,9 @@ zuul:
     service-resource:
       path: "/blog/api/**"
       strip-prefix: true
+    service-account:
+      path: "/api/account/**"
+      strip-prefix: true
 eureka:
   instance:
     prefer-ip-address: true
