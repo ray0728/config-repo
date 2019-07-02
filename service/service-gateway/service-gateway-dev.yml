@@ -43,7 +43,7 @@ zuul:
       path: "/blog/api/**"
       strip-prefix: true
     service-account:
-      path: "/api/account/**"
+      path: "/api/user/**"
       strip-prefix: true
 eureka:
   instance:
