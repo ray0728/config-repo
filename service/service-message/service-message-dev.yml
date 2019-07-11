@@ -9,10 +9,10 @@ spring:
             bindings:
                 news:
                     destinationi: "news"
-                    content-type: "text/plain"
+                    content-type: "application/json"
                 sms:
                     destinationi: "sms"
-                    content-type: "text/plain"
+                    content-type: "application/json"
 eureka:
     client:
         fetch-registry: true
