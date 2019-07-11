@@ -19,10 +19,6 @@ eureka:
         register-with-eureka: true
 security:
     oauth2:
-        resource:
-            token-info-uri: "${auth-server}/oauth/check_token"
-security:
-    oauth2:
         client:
             access-token-uri: "${auth-server}/oauth/token"
             client-id: '{cipher}a760e23ee96fadcdb72e95f2f2edd1c2b86f51af2244d9679258ea77c5454667'
