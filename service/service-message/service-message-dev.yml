@@ -6,6 +6,7 @@ spring:
             default-binder: "kafka"
             kafka:
                 binder:
+                    auto-create-topics: true
                     auto-add-partitions: true
             bindings:
                 news:
@@ -13,6 +14,9 @@ spring:
                     content-type: "application/json"
                 sms:
                     destinationi: "sms"
+                    content-type: "application/json"
+                hls:
+                    destinationi: "hls"
                     content-type: "application/json"
      kafka:
          producer:
