@@ -1,18 +1,18 @@
 server:
-    port: 10007
+  port: 10007
 spring:
-    cloud:
-        stream:
-            kafka:
-                binder:
-                    auto-add-partitions: true
-            bindings:
-                news:
-                    destinationi: "news"
-                    content-type: "application/json"
-                sms:
-                    destinationi: "sms"
-                    content-type: "application/json"
+  cloud:
+    stream:
+      kafka:
+        binder:
+          auto-add-partitions: true
+        bindings:
+          news:
+            destinationi: "news"
+            content-type: "application/json"
+          sms:
+            destinationi: "sms"
+            content-type: "application/json"
 eureka:
     client:
         fetch-registry: true
